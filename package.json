@@ -1,0 +1,25 @@
+{
+  "name": "16_lecture_ico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "hardhat",
+    "node": "hardhat node",
+    "deploy:loc": "hardhat run scripts/deploySLA.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploySLA.js --network sepolia",
+    "deploy:verify": "hardhat run scripts/deploySLA_verify.js --network sepolia",
+    "test": "hardhat test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.15.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.2"
+  }
+}
